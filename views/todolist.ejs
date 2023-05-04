@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Todo list</title>
+</head>
+<body class="to-do-list-page">
+    <div class="to-do-list-container">
+        <div class="form-container">
+            <form action="/todo" method="post">
+                <input type="text" name="todo" placeholder="Enter your next todo">
+                <button type="submit" name="add" class="button2">+</button>
+            </form>
+        </div>
+
+        <div class="to-do-container">
+            <% results.forEach (function(post){ %>
+                <form action="/todo" method="post">
+                    <p> <button type="submit"> <input type="hidden" required name="checkboxer" value= "<%= post.id %>" onchange="this.form.submit()"> - </button> <%= post.todo %></p>
+                </form>  
+            <% })%>
+        </div>
+        
+    </div>
+</body>
+</html>

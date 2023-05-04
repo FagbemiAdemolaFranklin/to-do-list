@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.app{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.home-page-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA90C6;
+}
+
+.home-page{
+    height: 75%;
+    width: 60%;
+    background-image: url("../images/picture4.jpg");
+    background-color: white;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 3px 3px  #413543;
+    border: 1px solid #191825;
+    border-radius: 10px;
+}
+
+.get-started-container{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.get-started-sub-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.get-started-text, .get-started-sub-text{
+    color: rgb(0, 0, 0);
+}
+
+
+/* .image-container{
+    width: 45%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+} */
+
+.start-button{
+    background-color: #8F43EE;
+    font-size: 14px;
+    color: yellow;
+}
+
+.start-button:hover{
+    background-image: url("../images/1\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+.to-do-list-page{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+
+.to-do-list-container{
+    display: flex;
+    height: 70%;
+    width: 20%;
+    border: 1px solid;
+    flex-direction: column;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    border: 1px solid;
+}
+
+.to-do-container{
+    height: 70%;
+    width: 90%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%; 
+}
+
+
+/* .form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
